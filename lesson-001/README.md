@@ -11,3 +11,11 @@ npm install -g @angular/@cli
 ```
 ng new lesson-001
 ```
+## 建立依賴庫
+```
+npm install
+```
+## 啟動
+```
+npm start
+```
