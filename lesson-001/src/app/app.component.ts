@@ -18,4 +18,8 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
   title = 'lesson-001';
   users = DUMMY_USERS;
+
+  onSelectUser(id: number) {
+    console.log(`select ${id}`);
+  }
 }
