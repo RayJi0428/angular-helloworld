@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from "./user/user.component";
 import { DUMMY_USERS } from './dummy-users';
+import { TasksComponent } from "./tasks/tasks.component";
+import { elementAt } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +14,19 @@ import { DUMMY_USERS } from './dummy-users';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    UserComponent
+    UserComponent,
+    TasksComponent
   ]
 })
 export class AppComponent {
   title = 'lesson-001';
   users = DUMMY_USERS;
+  selectedUserId = 'u1';
 
-  onSelectUser(id: number) {
-    console.log(`select ${id}`);
+  get selectedUser() {
+    return this.users.find((user) => user.id === this.selectedUserId)!;
+  }
+  onSelectUser(id: string) {
+    this.selectedUserId = id;
   }
 }

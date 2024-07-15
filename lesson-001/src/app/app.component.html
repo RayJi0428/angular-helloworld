@@ -18,5 +18,5 @@
                 (select)="onSelectUser($event)" />
         </li>
     </ul>
-    TASK OF THE USER
+    <app-tasks [name]="selectedUser.name" />
 </main>
