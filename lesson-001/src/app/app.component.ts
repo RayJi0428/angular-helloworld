@@ -21,7 +21,7 @@ import { elementAt } from 'rxjs';
 export class AppComponent {
   title = 'lesson-001';
   users = DUMMY_USERS;
-  selectedUserId = 'u1';
+  selectedUserId = '';
 
   get selectedUser() {
     return this.users.find((user) => user.id === this.selectedUserId)!;
