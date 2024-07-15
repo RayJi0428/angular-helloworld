@@ -11,10 +11,7 @@ npm install -g @angular/@cli
 ```
 ng new lesson-001
 ```
-## 建立元件
-```
-ng g c tasks --skip-tests
-```
+
 ## 建立依賴庫
 ```
 npm install
@@ -23,6 +20,13 @@ npm install
 ```
 npm start
 ```
+# 常用語法
+
+## 建立元件
+```
+ng g c tasks --skip-tests
+```
+
 ## for loop
 ```TypeScript
 @for (user of users; track user.id)
