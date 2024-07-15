@@ -23,5 +23,9 @@ npm install
 ```
 npm start
 ```
+## for loop
+```TypeScript
+@for (user of users; track user.id)
+```
 
 
