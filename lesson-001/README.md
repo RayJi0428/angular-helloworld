@@ -22,6 +22,12 @@ npm start
 ```
 # 常用語法
 
+## 檢查版本
+```
+ng version
+```
+
+
 ## 建立元件
 ```
 ng g c tasks --skip-tests
@@ -31,5 +37,11 @@ ng g c tasks --skip-tests
 ```TypeScript
 @for (user of users; track user.id)
 ```
+## ngFor ngIf
+```TypeScript
+<li *ngFor="let user of users">
+<app-tasks *ngIf="selectedUser; else fallback" [name]="selectedUser.name" />
+```
+
 
 

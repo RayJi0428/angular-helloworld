@@ -5,6 +5,7 @@ import { UserComponent } from "./user/user.component";
 import { DUMMY_USERS } from './dummy-users';
 import { TasksComponent } from "./tasks/tasks.component";
 import { elementAt } from 'rxjs';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,9 @@ import { elementAt } from 'rxjs';
     RouterOutlet,
     HeaderComponent,
     UserComponent,
-    TasksComponent
+    TasksComponent,
+    NgFor,
+    NgIf
   ]
 })
 export class AppComponent {
