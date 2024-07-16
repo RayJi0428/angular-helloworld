@@ -24,7 +24,7 @@ import { NgFor, NgIf } from '@angular/common';
 export class AppComponent {
   title = 'lesson-001';
   users = DUMMY_USERS;
-  selectedUserId = '';
+  selectedUserId?: string;
 
   get selectedUser() {
     return this.users.find((user) => user.id === this.selectedUserId)!;
